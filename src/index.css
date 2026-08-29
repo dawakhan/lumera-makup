@@ -2019,9 +2019,92 @@ p {
   .field-row {
     grid-template-columns: 1fr;
   }
+
+  /* ---- Header (mobile) ---- */
+
+  .header-main {
+    gap: 12px;
+  }
+
+  .header .brand {
+    gap: 8px;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .header .brand-text {
+    min-width: 0;
+  }
+
+  .header .brand-name {
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header .brand-latin {
+    display: none;
+  }
+
+  .header .brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+  }
+
+  .header-main .icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header .country-btn {
+    padding: 7px 10px;
+  }
 }
 
 @media (max-width: 560px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .page-head {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-main {
+    gap: 8px;
+  }
+
+  .header .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    font-size: 1.3rem;
+  }
+
+  .header .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .header-main .icon-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-actions {
+    gap: 4px;
+  }
+
+  .header .country-btn {
+    padding: 6px 8px;
+  }
+
+  .header .country-btn svg {
+    display: none;
+  }
   .product-grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
@@ -2071,5 +2154,15 @@ p {
 
   .section {
     padding-block: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header .brand-name {
+    font-size: 0.9rem;
+  }
+
+  .header .country-select {
+    display: none;
   }
 }
