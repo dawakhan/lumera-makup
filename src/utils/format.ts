@@ -9,11 +9,7 @@ export function toLocal(base: number, country: Country): number {
 }
 
 export function formatPrice(amount: number, country: Country): string {
-  const digits = country.rate < 1 ? 3 : 2
-  const value = new Intl.NumberFormat('en-US', {
-    minimumFractionDigits: 0,
-    maximumFractionDigits: digits,
-  }).format(amount)
+  const value = Math.round(amount)
   return `${value} ${country.currencySymbol}`
 }
 
