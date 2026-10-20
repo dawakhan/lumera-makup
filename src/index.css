@@ -1842,29 +1842,6 @@ p {
   margin-top: 8px;
 }
 
-/* ---------- WhatsApp FAB ---------- */
-
-.whatsapp-fab {
-  position: fixed;
-  bottom: 24px;
-  inset-inline-end: 24px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: #25d366;
-  color: #fff;
-  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
-  z-index: 90;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.whatsapp-fab:hover {
-  transform: scale(1.08);
-  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.55);
-}
-
 /* ---------- NotFound ---------- */
 
 .notfound-page .page-title {
